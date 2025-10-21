@@ -1,0 +1,1089 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Plant Wiki. sua wiki de plantas</title>
+  <style>
+    :root{
+      --card-radius: 12px;
+      --overlay-bg: rgba(0,0,0,0.65);
+      --accent: #2b8aef;
+      --gap: 16px;
+    }
+
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin:0;
+      background:#ffb2cf;
+      color:#7119ff;
+    }
+
+    .container{
+      max-width:1120px;
+      margin:28px auto;
+      padding:18px;
+    }
+
+    header h1{
+      margin:0 0 6px 0;
+      font-size:1.8rem;
+    }
+    header p{
+      margin:0;
+      color:#475569;
+      font-size:0.95rem;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+      gap:var(--gap);
+      margin-top:18px;
+    }
+
+    .card{
+      position:relative;
+      overflow:hidden;
+      border-radius:var(--card-radius);
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+      transition: transform .15s ease, box-shadow .15s ease;
+      cursor:pointer;
+    }
+    .card:hover{
+      transform: translateY(-6px);
+      box-shadow:0 12px 30px rgba(15,23,42,0.12);
+    }
+
+    .card img{
+      width:100%;
+      display:block;
+      height:auto;
+    }
+
+    .info{
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.65);
+      color:white;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end;
+      opacity:0;
+      transition:opacity .25s ease;
+      padding:10px;
+    }
+
+    .card:hover .info{
+      opacity:1;
+    }
+
+    .info h2{
+      margin:0;
+      font-size:1.1rem;
+    }
+    .info em{
+      font-size:0.9rem;
+      opacity:0.9;
+    }
+    .info ul{
+      margin:6px 0 0 16px;
+      padding:0;
+      font-size:0.85rem;
+      line-height:1.2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Wiki das plantas</h1>
+      <p>Passe o mouse sobre os cartões para ver o nome, nome científico e as características.</p>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+<br>
+<br>
+<br>
+
+<h1> 20/ 10/ 2025</h1>
+
+
+
+<!-- 🥝 Kiwi -->
+
+ <main>
+      <div class="grid">
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuUs6Udwbh3i2uNOZ7bG6ySsyA5DDldJXoUg&s" alt="Kiwi">
+  <div class="info">
+    <h2>Kiwi</h2>
+    <em>Actinidia deliciosa</em>
+    <ul>
+      <li>Casca marrom e aveludada</li>
+      <li>Polpa verde vibrante e sabor agridoce</li>
+      <li>Rico em vitamina C e antioxidantes</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍈 Jaca -->
+<div class="card">
+  <img src="https://www.jardimcor.com/wp-content/uploads/2017/06/c79bae52c6cb138042ce67088fdf3784.jpg" alt="Jaca">
+  <div class="info">
+    <h2>Jaca</h2>
+    <em>Artocarpus heterophyllus</em>
+    <ul>
+      <li>Maior fruta de árvore do mundo</li>
+      <li>Casca grossa e espinhosa</li>
+      <li>Polpa doce e aromática, muito usada em doces e sucos</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍇 Jabuticaba -->
+<div class="card">
+  <img src="https://www.wikiaves.com.br/wiki/_media/flora:jabuticaba1.jpg" alt="Jabuticaba">
+  <div class="info">
+    <h2>Jabuticaba</h2>
+    <em>Plinia cauliflora</em>
+    <ul>
+      <li>Fruto nativo do Brasil</li>
+      <li>Nasce diretamente no tronco da árvore</li>
+      <li>Casca roxa e polpa branca, doce e suculenta</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍫 Cacau -->
+<div class="card">
+  <img src="https://acdn-us.mitiendanube.com/stores/837/833/products/theobroma_cacao1-13587b09fe587d01fe16464928033292-640-0.jpg" alt="Cacau">
+  <div class="info">
+    <h2>Cacau</h2>
+    <em>Theobroma cacao</em>
+    <ul>
+      <li>Fruto tropical usado para produzir chocolate</li>
+      <li>Polpa branca e sementes amargas</li>
+      <li>Rico em antioxidantes e teobromina</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+<!-- 🌿 Maria-pretinha -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_vh0moQf5kf1JVhxbf4ukmF1AsYvaARGAHg&s" alt="Maria-pretinha">
+  <div class="info">
+    <h2>Maria-pretinha</h2>
+    <em>Solanum nigrum</em>
+    <ul>
+      <li>Pequena planta herbácea com frutos pretos e brilhantes</li>
+      <li>Encontra-se em áreas rurais e urbanas</li>
+      <li>Algumas partes são tóxicas, mas os frutos maduros podem ser comestíveis</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍋 Araçá-boi -->
+<div class="card">
+  <img src="https://painel.portalamazonia.com/uploads/RTEmagicC_araca.jpg.jpg" alt="Araçá-boi">
+  <div class="info">
+    <h2>Araçá-boi</h2>
+    <em>Eugenia stipitata</em>
+    <ul>
+      <li>Fruto amazônico de casca amarela e polpa ácida</li>
+      <li>Rico em vitamina C e antioxidantes</li>
+      <li>Usado em sucos, geleias e sobremesas regionais</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 💛 Maracujá -->
+<div class="card">
+  <img src="https://as1.ftcdn.net/jpg/05/16/97/92/1000_F_516979258_XNEJk88r5HOyQyV2YQiJZbPWq0tqFOtd.jpg" alt="Maracujá">
+  <div class="info">
+    <h2>Maracujá</h2>
+    <em>Passiflora edulis</em>
+    <ul>
+      <li>Fruto tropical de casca amarela ou roxa</li>
+      <li>Polpa ácida e aromática, rica em vitamina C</li>
+      <li>Usado em sucos, doces e como calmante natural</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ❤️ Caju -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtCgwi1L9Uk-Wck8mnAnPPnhFYzS5IWvN4yA&s" alt="Caju">
+  <div class="info">
+    <h2>Caju</h2>
+    <em>Anacardium occidentale</em>
+    <ul>
+      <li>Fruta tropical nativa do Brasil</li>
+      <li>Possui castanha comestível e polpa suculenta</li>
+      <li>Usado em sucos e doces</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- 🍒 Guaraná -->
+<div class="card">
+  <img src="https://image.tuasaude.com/media/article/yc/nz/guarana_37532.jpg" alt="Guaraná">
+  <div class="info">
+    <h2>Guaraná</h2>
+    <em>Paullinia cupana</em>
+    <ul>
+      <li>Fruto amazônico com sementes ricas em cafeína</li>
+      <li>Usado em bebidas e remédios naturais</li>
+      <li>Frutos pequenos e avermelhados</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍐 Goiaba -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9FTnvgRVdT2m8GkYBdpAOLxDNtx_ehBWoug&s" alt="Goiaba">
+  <div class="info">
+    <h2>Goiaba</h2>
+    <em>Psidium guajava</em>
+    <ul>
+      <li>Fruto tropical, doce e aromático</li>
+      <li>Casca verde ou amarela e polpa rosa ou branca</li>
+      <li>Rica em vitamina C, usada em sucos e doces</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🌰 Pequi -->
+<div class="card">
+  <img src="https://www.arvoresdobiomacerrado.com.br/site/wp-content/uploads/2017/06/1-4.jpg" alt="Pequi">
+  <div class="info">
+    <h2>Pequi</h2>
+    <em>Caryocar brasiliense</em>
+    <ul>
+      <li>Fruto típico do cerrado brasileiro</li>
+      <li>Casca espinhosa e polpa amarela e aromática</li>
+      <li>Usado em pratos regionais e óleo de pequi</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+     <br>
+    <br>
+    <br>
+
+    <h1> 18/ 10/ 2025</h1>
+
+   <main>
+      <div class="grid">
+        <div class="card">
+          <img src="https://apps.rhs.org.uk/plantselectorimages/detail/WSY0036008_3483.jpg">
+          <div class="info">
+            <h2>Margarida</h2>
+            <em>Bellis perennis</em>
+            <ul>
+              <li>Flor pequena e delicada</li>
+              <li>Comum em gramados</li>
+              <li>Pétalas brancas e miolo amarelo</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEpl-wPEc7kQxvKauJrcqX0NecTW8BB6V0g&s" alt="Girassol">
+          <div class="info">
+            <h2>Girassol</h2>
+            <em>Helianthus annuus</em>
+            <ul>
+              <li>Segue o movimento do sol</li>
+              <li>Grande e vistoso</li>
+              <li>Usado na produção de óleo</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaf-SNDQsqY_f0SZ6t3a9sR83Ly5ggHXZ-8w&s" alt="Lavanda">
+          <div class="info">
+            <h2>Lavanda</h2>
+            <em>Lavandula angustifolia</em>
+            <ul>
+              <li>Aroma intenso e relaxante</li>
+              <li>Folhas finas e flores roxas</li>
+              <li>Usada em óleos essenciais</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzzZWP1rJS_KzAX0eBlBuC1XlOTCcH87mw8Q&s" alt="Samambaia">
+          <div class="info">
+            <h2>Samambaia</h2>
+            <em>Nephrolepis exaltata</em>
+            <ul>
+              <li>Planta de sombra</li>
+              <li>Folhas arqueadas</li>
+              <li>Boa para interiores</li>
+            </div>
+        </div>
+    
+         
+      <br>
+      <br>
+
+  <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5kFJPZYNcGQ7lO0OcpgtlpZMHrdBOdbfNKQ&s" alt="Samambaia">
+          <div class="info">
+            <h2>Morango Silvestre</h2>
+            <em>Fragaria vesca</em>
+            <ul>
+             <li>Fruto pequeno e doce</li>
+      <li>Encontra-se em florestas e campos</li>
+      <li>Folhas trifoliadas e flores brancas</li>
+            </div>
+        </div>
+   
+<!-- 🍇 Amora-Preta -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawRaHU8Ozi6SGWEApqhWBdQ6yyaVXWq2I5w&s" alt="Amora-Preta">
+  <div class="info">
+    <h2>Amora-Preta</h2>
+    <em>Rubus fruticosus</em>
+    <ul>
+      <li>Fruto escuro e suculento</li>
+      <li>Rica em antioxidantes</li>
+      <li>Cresce em arbustos espinhosos</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🥬 Alface Mimosa -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZl5kJtqcRp3VvgccV1U77Rm-yXqIowcPuow&s" alt="Alface Mimosa">
+  <div class="info">
+    <h2>Alface Mimosa</h2>
+    <em>Lactuca sativa var. crispa</em>
+    <ul>
+      <li>Folhas crespas e macias</li>
+      <li>Sabor suave e levemente adocicado</li>
+      <li>Usada em saladas e sanduíches</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍇 Amora-Gigante -->
+<div class="card">
+  <img src="https://i.ytimg.com/vi/62liGusGlUM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAjKQOibAPJK-MAP3q9wzMj559C_Q" alt="Amora-Gigante">
+  <div class="info">
+    <h2>Amora-Gigante</h2>
+    <em>Rubus ulmifolius</em>
+    <ul>
+      <li>Frutos grandes e suculentos</li>
+      <li>Planta rústica e resistente</li>
+      <li>Excelente para geleias e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+<!-- 🍓 Framboesa -->
+<div class="card">
+  <img src="https://uploads.metroimg.com/wp-content/uploads/2024/05/28201414/Cultivo-de-mirtilo-e-framboesa-impulsiona-renda-de-produtores-no-DF-Metro%CC%81poles-2.jpg">
+  <div class="info">
+    <h2>Framboesa</h2>
+    <em>Rubus idaeus</em>
+    <ul>
+      <li>Fruto vermelho e delicado</li>
+      <li>Sabor doce e levemente ácido</li>
+      <li>Excelente para geleias, sucos e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🫐 Mirtilos -->
+<div class="card">
+  <img src="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2025/07/mirtilo-1.png">
+  <div class="info">
+    <h2>Mirtilos</h2>
+    <em>Vaccinium corymbosum</em>
+    <ul>
+      <li>Frutos pequenos e azulados</li>
+      <li>Ricos em antioxidantes</li>
+      <li>Usados em sucos, sobremesas e geleias</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍒 Cereja -->
+<div class="card">
+  <img src="https://www.viveirorosario.com.br/images/stories/virtuemart/product/cereja_flor_rosa.jpg">
+  <div class="info">
+    <h2>Cereja</h2>
+    <em>Prunus avium</em>
+    <ul>
+      <li>Fruto pequeno, vermelho e suculento</li>
+      <li>Sabor doce com leve acidez</li>
+      <li>Usada in natura, em sobremesas e geleias</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍇 Uva Verde -->
+<div class="card">
+  <img src="https://www.mundoboaforma.com.br/wp-content/uploads/2021/02/uva-verde.jpg" alt="Uva Verde">
+  <div class="info">
+    <h2>Uva Verde</h2>
+    <em>Vitis vinifera</em>
+    <ul>
+      <li>Fruto pequeno e verde-claro</li>
+      <li>Sabor doce e refrescante</li>
+      <li>Usada in natura, sucos e vinhos</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- 🍓 Fragaria chiloensis -->
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Fragariachileonsis.jpg" alt="Fragaria chiloensis">
+  <div class="info">
+    <h2>Fragaria chiloensis</h2>
+    <em>Fragaria chiloensis</em>
+    <ul>
+      <li>Morango silvestre costeiro</li>
+      <li>Frutos grandes e aromáticos</li>
+      <li>Usado em geleias e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍇 Uva Victoria -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LLEZUqK8K4GfKMfPhJjzIs_7TCzbJM7OQg&s" alt="Uva Victoria">
+  <div class="info">
+    <h2>Uva Vitoria</h2>
+    <em>Vitis vinifera 'Victoria'</em>
+    <ul>
+      <li>Frutos grandes e verdes com leve amarelado</li>
+      <li>Sabor doce e suave</li>
+      <li>Usada in natura, sucos e vinhos</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🌻 Girassol Vermelho -->
+<div class="card">
+  <img src="https://cdn0.umcomo.com.br/pt/posts/9/5/9/o_que_significa_flor_de_girassol_28959_0_600.jpg" alt="Girassol Vermelho">
+  <div class="info">
+    <h2>Girassol Vermelho</h2>
+    <em>Helianthus annuus var. ruber</em>
+    <ul>
+      <li>Flor grande e vistosa</li>
+      <li>Pétalas vermelhas vibrantes</li>
+      <li>Usado como ornamental e em jardins</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍓 Framboesa Amarela -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnkBtMb48kcG6C1-bxFurCwENg-n_c9zrkIA&s">
+  <div class="info">
+    <h2>Framboesa Amarela</h2>
+    <em>Rubus idaeus 'Yellow Gold'</em>
+    <ul>
+      <li>Fruto pequeno e amarelo</li>
+      <li>Sabor doce e delicado</li>
+      <li>Usada em geleias, sucos e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- 🌿 Lírio-da-paz -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpyFil7WfMfvQ2t9Havb4jom_4gLTKuydJJg&s" alt="Lírio-da-paz">
+  <div class="info">
+    <h2>Lírio-da-paz</h2>
+    <em>Spathiphyllum wallisii</em>
+    <ul>
+      <li>Folhagem verde e brilhante</li>
+      <li>Flor branca elegante</li>
+      <li>Planta ornamental, ideal para interiores</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🌹 Rosa Vermelha -->
+<div class="card">
+  <img src="https://media.istockphoto.com/id/588219452/photo/rosa-hybrida-hort-called-nicol-paganini.jpg?s=612x612&w=0&k=20&c=T9sPes9Y6kwPoAA3jzrpGY6ut7Ido5pbz_Tw4KYay9c=" alt="Rosa Vermelha">
+  <div class="info">
+    <h2>Rosa Vermelha</h2>
+    <em>Rosa hybrida</em>
+    <ul>
+      <li>Flor clássica e elegante</li>
+      <li>Pétalas vermelhas intensas</li>
+      <li>Simboliza amor e paixão</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🌹 Rosa Amarela -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtW0ftf0a5McUiPNXijhsSB_JuhGxxrlBzAA&s" alt="Rosa Amarela">
+  <div class="info">
+    <h2>Rosa Amarela</h2>
+    <em>Rosa hybrida</em>
+    <ul>
+      <li>Flor alegre e vibrante</li>
+      <li>Pétalas amarelas brilhantes</li>
+      <li>Simboliza amizade e alegria</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🌹 Rosa Branca -->
+<div class="card">
+  <img src="https://pergunteaoagronomo.com.br/wp-content/uploads/2020/08/rosas-brancas-1024x768.jpg" alt="Rosa Branca">
+  <div class="info">
+    <h2>Rosa Branca</h2>
+    <em>Rosa hybrida</em>
+    <ul>
+      <li>Flor delicada e pura</li>
+      <li>Pétalas brancas elegantes</li>
+      <li>Simboliza paz e pureza</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- 🌹 Rosa Rosa -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeCorQbyFH312nEoA9yLK5C75GhROtCTVURA&s" alt="Rosa Rosa">
+  <div class="info">
+    <h2>Rosa Rosa</h2>
+    <em>Rosa hybrida</em>
+    <ul>
+      <li>Flor delicada e charmosa</li>
+      <li>Pétalas rosa suaves</li>
+      <li>Simboliza gratidão e admiração</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- 🥬 Alface Crespa -->
+<div class="card">
+  <img src="https://nacaoagro.com.br/wp-content/uploads/2019/04/alface-crespa-2.jpg" alt="Alface Crespa">
+  <div class="info">
+    <h2>Alface Crespa</h2>
+    <em>Lactuca sativa var. crispa</em>
+    <ul>
+      <li>Folhas verde-escuras e enrugadas</li>
+      <li>Sabor leve e crocante</li>
+      <li>Ótima para saladas frescas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🥬 Alface Romana -->
+<div class="card">
+  <img src="https://organicosinbox.com.br/wp-content/uploads/2020/11/alface-romana-organica.jpg" alt="Alface Romana">
+  <div class="info">
+    <h2>Alface Romana</h2>
+    <em>Lactuca sativa var. longifolia</em>
+    <ul>
+      <li>Folhas longas e firmes</li>
+      <li>Sabor suave e levemente adocicado</li>
+      <li>Usada em saladas clássicas e sanduíches</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🌸 Lírio Stargazer -->
+<div class="card">
+  <img src="https://s2-casaejardim.glbimg.com/qlWS5pDSZRSSy_ivs4FosZzeieM=/0x0:1400x933/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2025/v/g/0NvFpoRYuFACdREsutow/lirio-rosa-caracteristicas-significados-cultivo-cuidados-capa.jpg" alt="Lírio Stargazer">
+  <div class="info">
+    <h2>Lírio Stargazer</h2>
+    <em>Lilium 'Stargazer'</em>
+    <ul>
+      <li>Flor grande e perfumada</li>
+      <li>Pétalas rosa com manchas escuras</li>
+      <li>Usado como ornamental e em arranjos florais</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- 🫐 Açaí -->
+<div class="card">
+  <img src="https://vault.pulsarimagens.com.br/file/thumb/01EG741.jpg" alt="Açaí">
+  <div class="info">
+    <h2>Açaí</h2>
+    <em>Euterpe oleracea</em>
+    <ul>
+      <li>Frutos pequenos e roxos escuros</li>
+      <li>Rico em antioxidantes</li>
+      <li>Usado em sucos, bowls e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- 🍓 Morango-branco -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL1-2siAsdZNE7593E1oL0JT9NeGvjeTgGoA&s" alt="Morango-branco">
+  <div class="info">
+    <h2>Morango-branco</h2>
+    <em>Fragaria × ananassa 'White Pineberry'</em>
+    <ul>
+      <li>Fruto claro com sementes vermelhas</li>
+      <li>Sabor suave, lembrando abacaxi</li>
+      <li>Variedade rara e ornamental</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://i.etsystatic.com/21239167/r/il/8bee98/6737315643/il_340x270.6737315643_5ffm.jpg" alt="Morango-anão">
+  <div class="info">
+    <h2>Morango-anão</h2>
+    <em>Fragaria nana</em>
+    <ul>
+      <li>Planta compacta com folhas pequenas</li>
+      <li>Ideal para vasos e jardins de interior</li>
+      <li>Produz frutos pequenos e doces</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🌸 Lírio-branco -->
+<div class="card">
+  <img src="https://static.vecteezy.com/ti/fotos-gratis/p1/11849444-vista-acima-da-flor-branca-lilium-candidum-foto.jpg" alt="Lírio-branco">
+  <div class="info">
+    <h2>Lírio-branco</h2>
+    <em>Lilium candidum</em>
+    <ul>
+      <li>Flores grandes e brancas</li>
+      <li>Perfume suave e elegante</li>
+      <li>Símbolo de pureza e paz</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+ <br>
+
+
+<!-- 🍈 Ameixa-roxa -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvK268YMZaJ57UmJ_4Fup3UM6hMpNiuGxTGQ&s" alt="Ameixa-roxa">
+  <div class="info">
+    <h2>Ameixa-roxa / ameixeira europeia</h2>
+    <em>Prunus domestica</em>
+    <ul>
+      <li>Fruto doce de polpa vermelha</li>
+      <li>Casca roxa e brilhante</li>
+      <li>Usada em doces e sucos</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍑 Ameixa-japonesa -->
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/W_sumomo4061.jpg" alt="Ameixa-japonesa">
+  <div class="info">
+    <h2>Ameixa-japonesa</h2>
+    <em>Prunus salicina</em>
+    <ul>
+      <li>Fruto grande e suculento</li>
+      <li>Casca vermelha brilhante</li>
+      <li>Popular na Ásia e América do Sul</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍈 Ameixa-vermelha -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgVeg2oMQkU7eW5QDtTR4e-3Kf8JYXXc6qLQ&s" alt="Ameixa-vermelha">
+  <div class="info">
+    <h2>Ameixa-vermelha</h2>
+    <em>Prunus cerasifera</em>
+    <ul>
+      <li>Fruto de cor vermelha intensa</li>
+      <li>Sabor equilibrado entre doce e ácido</li>
+      <li>Excelente para compotas e sucos</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🥕 Cenoura Laranja -->
+<div class="card">
+  <img src="https://receitasdepesos.com.br/wp-content/uploads/2025/02/Plantar-Cenoura_1738618625077.jpg">
+  <div class="info">
+    <h2>Cenoura Laranja</h2>
+    <em>Daucus carota subsp. sativus</em>
+    <ul>
+      <li>Raiz alaranjada e adocicada</li>
+      <li>Rica em betacaroteno e vitaminas</li>
+      <li>Usada em saladas, sucos e pratos cozidos</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+<!-- 🍋 Limão Siciliano -->
+<div class="card">
+  <img src="https://www.sitiodamata.com.br/media/catalog/product/cache/bd7e41e8357e6ae06c7d33758afd4978/s/i/sitio-da-mata-limao-siciliano-citrus-limon.jpg" alt="Limão Siciliano">
+  <div class="info">
+    <h2>Limão Siciliano</h2>
+    <em>Citrus limon</em>
+    <ul>
+      <li>Casca amarela e aroma suave</li>
+      <li>Sabor menos ácido e mais adocicado</li>
+      <li>Usado em doces, bebidas e pratos refinados</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍈 Limão Tahiti -->
+<div class="card">
+  <img src="https://assets.revistacultivar.com.br/7148a63e-ed68-4af7-a467-058e85187306.jpg" alt="Limão Tahiti">
+  <div class="info">
+    <h2>Limão Tahiti</h2>
+    <em>Citrus latifolia</em>
+    <ul>
+      <li>Casca verde e lisa</li>
+      <li>Sabor ácido e refrescante</li>
+      <li>Ideal para sucos e caipirinhas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍊 Laranja Pêra -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxrzL3hyqxW-xFAANltIDpWgj16uqS8ChMpA&s" alt="Laranja Pêra">
+  <div class="info">
+    <h2>Laranja Pêra</h2>
+    <em>Citrus × sinensis</em>
+    <ul>
+      <li>Casca fina e fácil de descascar</li>
+      <li>Sabor doce e levemente ácido</li>
+      <li>Perfeita para sucos e consumo direto</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍊 Laranja Bahia -->
+<div class="card">
+  <img src="https://media-agro.estadao.com.br/uploads/2025/05/AdobeStock_59371039-scaled.jpeg" alt="Laranja Bahia">
+  <div class="info">
+    <h2>Laranja Bahia</h2>
+    <em>Citrus sinensis 'Bahia'</em>
+    <ul>
+      <li>Casca grossa e fácil de remover</li>
+      <li>Sabor suave e sem sementes</li>
+      <li>Ótima para comer em gomos</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- 🍊 Laranja Lima -->
+<div class="card">
+  <img src="https://www.odairplantas.com.br/assets/img/produtos/85.jpg" alt="Laranja Lima">
+  <div class="info">
+    <h2>Laranja Lima</h2>
+    <em>Citrus sinensis var. dulcis</em>
+    <ul>
+      <li>Polpa clara e sabor suave</li>
+      <li>Baixa acidez — ideal para crianças</li>
+      <li>Usada em sobremesas e sucos leves</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍎 Maçã Fuji -->
+<div class="card">
+  <img src="https://www.gov.br/agricultura/pt-br/assuntos/noticias/maca-fuji-de-sao-joaquim-tem-suas-caracteristicas-unicas-reconhecidas-pelo-registro-de-indicacao-geografica/maca-fuji-2_foto-aires-mariga-epagri.jpg" alt="Maçã Fuji">
+  <div class="info">
+    <h2>Maçã Fuji</h2>
+    <em>Malus domestica 'Fuji'</em>
+    <ul>
+      <li>Casca vermelha com listras amareladas</li>
+      <li>Polpa crocante e sabor doce</li>
+      <li>Excelente para comer in natura</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍏 Maçã Verde (Granny Smith) -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUfGEtIprIeaGMi84V4F65IYCPpYcRLV-tA&s" alt="Maçã Verde">
+  <div class="info">
+    <h2>Maçã Verde</h2>
+    <em>Malus domestica 'Granny Smith'</em>
+    <ul>
+      <li>Casca verde vibrante e lisa</li>
+      <li>Sabor ácido e refrescante</li>
+      <li>Perfeita para tortas e saladas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍎 Maçã Gala -->
+<div class="card">
+  <img src="https://s2-globorural.glbimg.com/yKlytJ87-VI8RyfhwLDdQJgnN2o=/0x0:640x481/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_afe5c125c3bb42f0b5ae633b58923923/internal_photos/bs/2024/L/N/XhaerpQda43Lk1FrhzRw/colheita-da-maca-em-sc.jpg" alt="Maçã Gala">
+  <div class="info">
+    <h2>Maçã Gala</h2>
+    <em>Malus domestica 'Gala'</em>
+    <ul>
+      <li>Casca vermelha e amarela</li>
+      <li>Doce, aromática e suculenta</li>
+      <li>Popular em lanches e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- 🍌 Banana Nanica -->
+<div class="card">
+  <img src="https://www.picturethisai.com/image-handle/website_cmsname/image/1080/317769975813210112.jpeg?x-oss-process=image/format,webp/resize,s_300&v=1.0">
+  <div class="info">
+    <h2>Banana Nanica</h2>
+    <em>Musa acuminata 'Nanica'</em>
+    <ul>
+      <li>Fruto pequeno e doce</li>
+      <li>Casca amarela fina</li>
+      <li>Perfeita para lanches e vitaminas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍌 Banana Prata -->
+<div class="card">
+  <img src="https://marmitexdesucesso.com.br/wp-content/uploads/2024/03/Pode-fritar-banana-prata.jpg">
+  <div class="info">
+    <h2>Banana Prata</h2>
+    <em>Musa acuminata 'Prata'</em>
+    <ul>
+      <li>Fruto pequeno e firme</li>
+      <li>Sabor doce e levemente ácido</li>
+      <li>Usada in natura, frita ou em sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍌 Banana Ouro -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3AYp3xe9WkZluCmf6ORuVvqDmem47ugh6Kg&s" alt="Banana Ouro">
+  <div class="info">
+    <h2>Banana Ouro</h2>
+    <em>Musa acuminata 'Ouro'</em>
+    <ul>
+      <li>Fruto pequeno e amarelo intenso</li>
+      <li>Sabor doce e aromático</li>
+      <li>Popular em sobremesas e doces caseiros</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍐 Pera Packham -->
+<div class="card">
+  <img src="https://mountainviewnursery.com.au/cdn/shop/files/master-PYRCOMPACTRIDWA-1743292163-packham1_7be60a76-b832-424a-8586-83c2602e983e_2048x.jpg?v=1754301910" alt="Pera Packham">
+  <div class="info">
+    <h2>Pera Packham</h2>
+    <em>Pyrus communis 'Packham'</em>
+    <ul>
+      <li>Casca verde-clara e polpa doce</li>
+      <li>Sabor suave e aromático</li>
+      <li>Ótima para sobremesas, doces e saladas</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- 🍐 Pera Williams -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GPgL0zi6pFXUkGe2O8MxNPcE2Xga8Dba-w&s" alt="Pera Williams">
+  <div class="info">
+    <h2>Pera Williams</h2>
+    <em>Pyrus communis 'Williams'</em>
+    <ul>
+      <li>Casca amarela e polpa suculenta</li>
+      <li>Sabor doce e delicado</li>
+      <li>Excelente para sobremesas e sucos</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🐉 Pitaya -->
+<div class="card">
+  <img src="https://www.gardenia.net/wp-content/uploads/2023/04/R2qbXYV4vzPHphRnG5Es1S8SHyjAK6YMJ0KJ3EeD-780x520.webp" alt="Pitaya">
+  <div class="info">
+    <h2>Pitaya</h2>
+    <em>Hylocereus undatus</em>
+    <ul>
+      <li>Casca rosa vibrante com espinhos suaves</li>
+      <li>Polpa branca com pequenas sementes pretas</li>
+      <li>Sabor adocicado e refrescante, ideal para sucos e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍈 Mamão Papaia -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHXI8_AkJ5lt1U9yyqTY9nuTlp8JJkZDitQ&s" alt="Mamão Papaia">
+  <div class="info">
+    <h2>Mamão Papaia</h2>
+    <em>Carica papaya 'Papaia'</em>
+    <ul>
+      <li>Fruto médio com polpa laranja vibrante</li>
+      <li>Sabor doce e refrescante</li>
+      <li>Usado em sucos, vitaminas e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ⭐ Carambola Amarela -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMqKEvHoXK1aPUwx9fwNFsk3Oz6KfjP7LYPA&s" alt="Carambola Amarela">
+  <div class="info">
+    <h2>Carambola Amarela</h2>
+    <em>Averrhoa carambola</em>
+    <ul>
+      <li>Fruto em forma de estrela quando fatiado</li>
+      <li>Casca amarela brilhante</li>
+      <li>Sabor doce com leve acidez, ótimo para sucos e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- 🍍 Abacaxi Pérola -->
+<div class="card">
+  <img src="https://www.sitiodamata.com.br/media/catalog/product/cache/bd7e41e8357e6ae06c7d33758afd4978/a/b/abacaxi_1__2nd.jpg" alt="Abacaxi Pérola">
+  <div class="info">
+    <h2>Abacaxi Pérola</h2>
+    <em>Ananas comosus 'Pérola'</em>
+    <ul>
+      <li>Fruto de tamanho médio com polpa amarela e doce</li>
+      <li>Casca rugosa, fácil de descascar</li>
+      <li>Excelente para sucos, sobremesas e consumo in natura</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍍 Abacaxi Havaí -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6-TJSmOTPJ9yWjdL8Y4XjF9FreNjBY4z7ig&s" alt="Abacaxi Havaí">
+  <div class="info">
+    <h2>Abacaxi Havaí</h2>
+    <em>Ananas comosus 'Hawaiana'</em>
+    <ul>
+      <li>Fruto grande com polpa doce e suculenta</li>
+      <li>Casca amarela com tons verdes</li>
+      <li>Perfeito para sucos tropicais e sobremesas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍍 Abacaxi Vitória -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSWljVEDFGUK1vmHXJQAo24L5zejGyimYpg&s" alt="Abacaxi Vitória">
+  <div class="info">
+    <h2>Abacaxi Vitória</h2>
+    <em>Ananas comosus 'Vitória'</em>
+    <ul>
+      <li>Fruto médio a grande, polpa doce e firme</li>
+      <li>Casca amarela dourada</li>
+      <li>Ideal para sobremesas, sucos e pratos tropicais</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🍉 Melancia Crimson Sweet -->
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3aOST2QqVt1jhSxULZf_vcc2l8R5KM9Vxkw&s" alt="Melancia Crimson Sweet">
+  <div class="info">
+    <h2>Melancia Crimson Sweet</h2>
+    <em>Citrullus lanatus 'Crimson Sweet'</em>
+    <ul>
+      <li>Casca verde clara com listras escuras</li>
+      <li>Polpa vermelha, suculenta e doce</li>
+      <li>Perfeita para comer fresca ou em sucos</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>  
+    </main>
+  </div>
+</body>
+</html>
